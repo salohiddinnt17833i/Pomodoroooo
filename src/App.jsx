@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
+import './App.css'
 
 function App() {
   const [minutes, setMinutes] = useState(25);
   const [seconds, setSeconds] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
-
+  
   useEffect(() => {
     let intervalId;
 
@@ -55,11 +56,11 @@ function App() {
       </h1>
       <div className="buttons">
         {!isRunning ? (
-          <button onClick={startTimer}>Boshlash</button>
+          <button className="btn" onClick={startTimer}>Boshlash</button>
         ) : (
-          <button onClick={pauseTimer}>Toxtatish</button>
+          <button className="btn" onClick={pauseTimer}>Toxtatish</button>
         )}
-        <button onClick={resetTimer}>Qaytarish</button>
+        <button className="btn" onClick={resetTimer}>Qaytarish</button>
       </div>
     </div>
   );

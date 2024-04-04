@@ -1,9 +1,58 @@
-*{
+body {
+  background-color: darkslategray;
+}
+
+* {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
   font-family: sans-serif;
 }
-div{
-  margin: 0px auto;
+
+.pomodoro-container {
+  max-width: 600px;
+  width: 100%;
+  margin: 50px auto;
+  text-align: center;
+  background-color: rgb(59, 90, 90);
+  height: 300px;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: rgb(59, 90, 90) 0px 3px 8px;
+}
+
+.timer {
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+
+.buttons {
+  max-width: 600px;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+}
+
+
+.btn:nth-child(even) {
+  max-width: 200px;
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  border: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 10px;
+}
+
+.btn:nth-child(odd) {
+  max-width: 200px;
+  width: 100%;
+  height: 40px;
+  background-color: indigo;
+  border: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 10px;
 }
